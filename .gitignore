@@ -1,5 +1,4 @@
 node_modules/
 psd/
-buidl/css/maps/
+build/css/maps/
 *.cmd
-

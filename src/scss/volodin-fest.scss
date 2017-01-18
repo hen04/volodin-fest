@@ -41,6 +41,50 @@ main {
 	height: 460px;
 	box-sizing: border-box;
 	margin-bottom: 30px;
+	text-align: center;
+	h2 {
+		position: relative;
+		span {
+			background-color: #fff;
+			display: inline-block;
+			font-weight: 400;
+			padding: 5px;
+		}
+		&:before,
+		&:after {
+			content: '';
+			position: absolute;
+			height: 2px;
+			width: 43%;
+			background-color: #fff;
+			top: 50%;
+		}
+		&:before {
+			left: 0;
+		}
+		&:after {
+			right: 0;
+		}
+	}
+	.news-slider {
+		text-align: left;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-webkit-align-items: center;
+		align-items: center;
+		height: 360px;
+		&__item {
+			margin-left: 40px;
+			background-color: #fff;
+			display: -webkit-flex;
+			display: -ms-flex;
+			display: flex;
+		}
+		&__info {
+			padding: 20px;
+		}
+	}
 }
 .programm {
 	display: -webkit-flex;
@@ -48,6 +92,8 @@ main {
 	display: flex;
 	-webkit-flex-flow: row wrap;
 	flex-flow: row wrap;
+	-webkit-align-items: flex-start;
+	align-items: flex-start;
 	margin-left: -40px;
 	&__item {
 		margin-left: 40px;

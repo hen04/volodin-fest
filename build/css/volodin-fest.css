@@ -37,7 +37,42 @@ header {
   padding-top: 30px;
   height: 460px;
   box-sizing: border-box;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  text-align: center; }
+  .news h2 {
+    position: relative; }
+    .news h2 span {
+      background-color: #fff;
+      display: inline-block;
+      font-weight: 400;
+      padding: 5px; }
+    .news h2:before, .news h2:after {
+      content: '';
+      position: absolute;
+      height: 2px;
+      width: 43%;
+      background-color: #fff;
+      top: 50%; }
+    .news h2:before {
+      left: 0; }
+    .news h2:after {
+      right: 0; }
+  .news .news-slider {
+    text-align: left;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    height: 360px; }
+    .news .news-slider__item {
+      margin-left: 40px;
+      background-color: #fff;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex; }
+    .news .news-slider__info {
+      padding: 20px; }
 
 .programm {
   display: -webkit-flex;
@@ -45,6 +80,8 @@ header {
   display: flex;
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
   margin-left: -40px; }
   .programm__item {
     margin-left: 40px;
@@ -128,5 +165,3 @@ footer {
     height: 80px; }
   .footer-copyright__right {
     text-align: right; }
-
-/*# sourceMappingURL=maps/volodin-fest.css.map */
