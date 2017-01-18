@@ -16,4 +16,6 @@ $(function(){
 		var $width = $(this).data('width');
 		$(this).css('width', $width);
 	});
+
+
 });
