@@ -3,6 +3,7 @@ html(lang="ru")
 	head
 		meta(charset="UTF-8")
 		title Всероссийский театральный фестиваль имени Александра Володина
+		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=PT+Mono&amp;subset=cyrillic-ext")
 		link(rel="stylesheet", href="css/normalize.css")
 		link(rel="stylesheet", href="css/slick.css")
 		link(rel="stylesheet", href="css/slick-theme.css")
@@ -18,7 +19,7 @@ html(lang="ru")
 						ul.menu-top
 							li
 								a(href="") Афиша
-							li
+							li.menu-arrow
 								a(href="") Фестиваль
 								.menu-top-second
 									ul
@@ -34,13 +35,14 @@ html(lang="ru")
 											a(href="") Пресса
 										li
 											a(href="") Контакты
-							li
-								a(href="") Первая читка
+							li.menu-arrow.menu-bd
+								a(href="") Участвовать
 					.header-logo
-						img(src="", alt="")
+						a(href="index.html") 
+							img(src="img/logo.png", alt="")
 					.header-right
 						.menu-part
-							span Участвовать
+							a(href="") Первая читка
 						.menu-volodin
 							img(src="img/volodin-sm.jpg", alt="")
 							span Александр Володин
@@ -48,31 +50,31 @@ html(lang="ru")
 								ul
 									li
 										a(href="") 
-											img(src="", alt="")
+											img(src="img/volodin-menu-1.jpg", alt="")
 											span Биография
 									li
 										a(href="")
-											img(src="", alt="")
+											img(src="img/volodin-menu-2.jpg", alt="")
 											span Спектакли
 									li
 										a(href="")
-											img(src="", alt="")
+											img(src="img/volodin-menu-3.jpg", alt="")
 											span Стихи
 									li
 										a(href="")
-											img(src="", alt="")
+											img(src="img/volodin-menu-4.jpg", alt="")
 											span Кино
 									li
 										a(href="")
-											img(src="", alt="")
+											img(src="img/volodin-menu-5.jpg", alt="")
 											span Видео
 									li
 										a(href="")
-											img(src="", alt="")
+											img(src="img/volodin-menu-6.jpg", alt="")
 											span Фотографии
 									li
 										a(href="")
-											img(src="", alt="")
+											img(src="img/volodin-menu-7.jpg", alt="")
 											span Воспоминания
 			main
 				block content
@@ -84,20 +86,20 @@ html(lang="ru")
 						p Театральный фестиваль "Пять вечеров" проводится "Петербургским театральным журналом" при содействии
 						.partners-slider
 							.partners-slider__item
-								1
+								img(src="img/partner-1.jpg", alt="")
 							.partners-slider__item
-								2
+								img(src="img/partner-2.jpg", alt="")
 							.partners-slider__item
-								3
+								img(src="img/partner-3.jpg", alt="")
 							.partners-slider__item
-								1
+								img(src="img/partner-1.jpg", alt="")
 							.partners-slider__item
-								2
+								img(src="img/partner-2.jpg", alt="")
 							.partners-slider__item
-								3
+								img(src="img/partner-3.jpg", alt="")
 					.footer-info__contacts
-						| Контакты 
-						.footer-info__text
+						h3 Контакты 
+						.footer-info__text.footer-info__text--phone
 							span Телефон/факс 
 							span.phone +7 (812) 579-67-73
 						.footer-info__text
@@ -115,7 +117,8 @@ html(lang="ru")
 						p &copy; 2004-2017 Пять вечеров
 						p &copy; Дизайн и разработка 
 							a(href="http://shweb.ru/" target="_blank") Studio Sweb
-					.footer-copyright__logo 
+					.footer-copyright__logo
+						img(src="img/logo-footer.png", alt="")
 					.footer-copyright__right
 						p Директор фестиваля - Виктор Рыжаков
 						p Арт-директор - Марина Дмитревская
