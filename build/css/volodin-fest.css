@@ -100,6 +100,10 @@ header {
   .menu-top > li {
     list-style: none;
     margin-right: 20px; }
+    .menu-top > li:hover.menu-arrow a:after {
+      -webkit-transform: rotate(0);
+      transform: rotate(0);
+      margin-top: -3px; }
     .menu-top > li:hover div {
       display: block; }
   .menu-top a {
@@ -113,8 +117,11 @@ header {
     position: absolute;
     width: 14px;
     height: 10px;
-    top: 4px;
+    top: 50%;
+    margin-top: -5px;
     right: 0;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
     background: url(../img/menu-arrow.png) 0 0 no-repeat; }
 
 .menu-top-second {
@@ -185,21 +192,34 @@ header {
       content: '';
       width: 14px;
       height: 10px;
-      top: 20px;
+      top: 50%;
+      margin-top: -5px;
       right: 10px;
       position: absolute;
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
       background: url(../img/menu-arrow.png) 0 0 no-repeat; }
   .menu-volodin img {
     position: relative;
     margin: -1px 0 0 -1px; }
+  .menu-volodin:hover span:after {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+    margin-top: -3px; }
   .menu-volodin:hover .menu-volodin-second {
     display: block; }
 
 .menu-bd {
-  border: 1px solid rgba(100, 55, 57, 0.2);
-  padding: 15px 20px; }
+  border: 1px solid rgba(100, 55, 57, 0.2); }
+  .menu-bd a {
+    display: block;
+    padding: 15px 40px 15px 20px; }
+    .menu-bd a:after {
+      right: 15px; }
   .menu-bd .menu-top-second {
     margin-left: -20px; }
+  .menu-bd:hover {
+    background-color: #fff; }
 
 .menu-volodin-second {
   display: none;
