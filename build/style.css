@@ -600,7 +600,7 @@ header {
   top: 0;
   left: 0;
   position: absolute;
-  z-index: -1;
+  z-index: -2;
 }
 
 .programm__img--top-bottom {
@@ -608,9 +608,17 @@ header {
   justify-content: space-between;
 }
 
+.programm__img-bg {
+  position: absolute;
+  z-index: -1;
+  width: 270px;
+  height: 270px;
+  background-color: rgba(100, 55, 57, 0.4);
+}
+
 .programm__date {
   margin-bottom: 7px;
-  font-size: 13px;
+  font-size: 14px;
   color: #8b1c24;
   display: -webkit-flex;
   display: -ms-flex;
@@ -628,7 +636,6 @@ header {
 .programm__name {
   font-size: 22px;
   line-height: 1.2;
-  margin-bottom: 10px;
 }
 
 .programm__special {
@@ -667,6 +674,10 @@ header {
   font-size: 12px;
   color: #fff;
   margin: 0 0 10px 10px;
+}
+
+.programm__spec {
+  margin-bottom: 5px;
 }
 
 .programm__ticket {
