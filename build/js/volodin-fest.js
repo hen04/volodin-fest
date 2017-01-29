@@ -25,4 +25,30 @@ $(function(){
 		$(this).css('margin-top', -$minus);
 	});
 
+	var showmenu = $('.menu-volodin-second');
+	$('.menu-volodin').on('click', function() {
+		if (showmenu.hasClass('show')) {
+			$(this).removeClass('active')
+			$(showmenu).removeClass('show');
+		} else {
+			$(this).addClass('active');
+			$(showmenu).addClass('show');
+		}
+	});
+
+
+	var secondmenu = $('.menu-item-has-children');
+	$(secondmenu).on('click', function(e) {
+		e.preventDefault();
+		if ($(this).hasClass('active')) {
+			$('.menu-item-has-children').removeClass('active');
+			$('.menu-top-second').removeClass('show');
+		} else {
+			$('.menu-item-has-children').removeClass('active');
+			$('.menu-top-second').removeClass('show');
+			$(this).addClass('active');
+			$(this).children('.menu-top-second').addClass('show');
+		}
+	});
+
 });
